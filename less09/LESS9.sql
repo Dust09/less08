@@ -9,7 +9,7 @@ INSERT INTO sample.users (name, age)
 COMMIT;   
 
 
---2-е Задание
+--2-е задание
 CREATE VIEW product_and_catalog AS
 SELECT p.name 'products' ,c.name 'catalog' FROM products p
 LEFT JOIN catalogs c ON p.catalog_id = c.id;
